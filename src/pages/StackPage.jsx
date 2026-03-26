@@ -2,46 +2,46 @@ import Footer from '../components/Footer.jsx'
 import { ASSETS } from '../assets.js'
 
 const CORE_SKILLS = [
-  { label: "라이브러리",    name: "React",              pct: 95 },
-  { label: "언어",   name: "JavaScript (ES6+)",  pct: 90 },
+  { label: "언어", name: "JavaScript", pct: 90 },
+  { label: "라이브러리", name: "React", pct: 90 },
 ]
-const TYPING_SKILL = { label: "슈퍼셋", name: "TypeScript", pct: 88 }
+const TYPING_SKILL = { label: "마크업", name: "HTML5 / CSS3", pct: 85 }
 
 const STYLING_ITEMS = [
-  { name: "Tailwind CSS",        badge: "유틸리티 우선",  active: true  },
-  { name: "CSS-in-JS (Styled)",  badge: "런타임",        active: false },
-  { name: "Sass/SCSS",           badge: "전처리",  active: false },
-  { name: "Framer Motion",       badge: "애니메이션",      active: true  },
+  { name: "Styled-Components", badge: "컴포넌트", active: true },
+  { name: "CSS3", badge: "표준", active: true },
+  { name: "Tailwind CSS", badge: "유틸리티 우선", active: false },
+  { name: "Sass/SCSS", badge: "전처리", active: false },
 ]
 
-const TOOLS = ["Vite", "Jest", "Testing Library", "Redux Toolkit", "GitHub Actions", "Docker"]
+const TOOLS = ["Git", "Redux", "Vite", "jQuery"]
 
 const EXPERIENCE = [
   {
     side: "left",
-    period: "현재",
+    period: "2022.09 ~ 현재",
     periodColor: "#61dafb",
-    title: "시니어 리액트 아키텍트",
-    company: "CloudNexus Systems",
-    desc: "Vite와 React 서버 컴포넌트를 사용하여 기존 모놀리식 대시보드를 현대적인 마이크로 프론트엔드 아키텍처로 마이그레이션하는 작업을 리드하고 있습니다.",
+    title: "프론트엔드 엔지니어",
+    company: "주식회사 티윈",
+    desc: "LG ThinQ 앱 공통부 개발 및 디자인 담당. LG WebOS 관련 신규 프로젝트 개발 및 접근성을 주요하게 담당하고 있으며, 다수의 플랫폼 고도화 프로젝트를 진행 중입니다.",
     active: true,
   },
   {
     side: "right",
-    period: "2021 — 2023",
+    period: "2016.10 ~ 2021.10",
     periodColor: "#bcc8cd",
-    title: "프론트엔드 엔지니어",
-    company: "FinTech Flow",
-    desc: "재무 분석가를 위한 복잡한 데이터 시각화 도구를 개발했습니다. 개발 시간을 40% 단축하는 맞춤형 디자인 시스템을 구현했습니다.",
+    title: "솔루션개발부 프론트 관리",
+    company: "주식회사이퀴닉스",
+    desc: "쇼핑몰 솔루션 디자인, 광고스크립트 패키징, 프론트(HTML, CSS, jQuery, GTM)를 담당하여 신규 이전 및 유지보수를 성공적으로 수행했습니다.",
     active: false,
   },
   {
     side: "left",
-    period: "2019 — 2021",
+    period: "2012.04 ~ 2013.02",
     periodColor: "#bcc8cd",
-    title: "풀스택 개발자",
-    company: "Pixel Perfect Agency",
-    desc: "글로벌 브랜드를 위한 반응형 웹 경험을 제공했습니다. 접근성(WCAG) 및 성능 최적화에 중점을 두었습니다.",
+    title: "사원",
+    company: "엔디하임 주식회사",
+    desc: "인하우스 및 에이전시 업무를 경험하며 웹 개발 실무 커리어를 성공적으로 시작했습니다.",
     active: false,
   },
 ]
@@ -65,9 +65,9 @@ export default function StackPage() {
           {/* Decorative pixel grid */}
           <div className="grid grid-cols-3 gap-2 opacity-20 w-32 h-32 shrink-0">
             {[
-              "#bfefff","#2d3449","#2d3449",
-              "#2d3449","#61dafb","#2d3449",
-              "#2d3449","#2d3449","#ddb7ff",
+              "#bfefff", "#2d3449", "#2d3449",
+              "#2d3449", "#61dafb", "#2d3449",
+              "#2d3449", "#2d3449", "#ddb7ff",
             ].map((c, i) => (
               <div key={i} style={{ background: c }} className="rounded-sm" />
             ))}
@@ -117,11 +117,10 @@ export default function StackPage() {
                   <div key={name} className="flex items-center justify-between">
                     <span className="font-inter text-text-muted text-lg">{name}</span>
                     <span
-                      className={`font-inter text-[10px] uppercase px-2 py-1 border ${
-                        active
-                          ? "border-cyan text-cyan"
-                          : "border-[#3d494d] text-[#3d494d]"
-                      }`}
+                      className={`font-inter text-[10px] uppercase px-2 py-1 border ${active
+                        ? "border-cyan text-cyan"
+                        : "border-[#3d494d] text-[#3d494d]"
+                        }`}
                     >
                       {badge}
                     </span>
@@ -173,15 +172,13 @@ export default function StackPage() {
               <div key={idx} className="relative flex items-center">
                 {/* Timeline dot */}
                 <div
-                  className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-xl z-10 ${
-                    active ? "dot-active" : "dot-inactive"
-                  }`}
+                  className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-xl z-10 ${active ? "dot-active" : "dot-inactive"
+                    }`}
                 />
                 {/* Content */}
                 <div
-                  className={`w-1/2 ${
-                    side === "left" ? "pr-16 text-right" : "ml-auto pl-16 text-left"
-                  }`}
+                  className={`w-1/2 ${side === "left" ? "pr-16 text-right" : "ml-auto pl-16 text-left"
+                    }`}
                 >
                   <span className="font-inter text-xs uppercase tracking-wider" style={{ color: periodColor }}>
                     {period}

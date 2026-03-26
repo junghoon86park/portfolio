@@ -32,15 +32,15 @@ export default function ContactPage() {
             </h1>
 
             <p className="font-inter text-text-muted text-lg leading-relaxed m-0">
-              확장 가능한 React 아키텍처와 고성능 디지털 경험을 구축합니다.
+              팀 협업과 코드 품질을 중시하며, 새로운 환경에서도 빠르게 적응하고 기여할 수 있습니다.
               기술적 비전을 논의하시거나 편하게 인사 남겨주세요.
             </p>
 
             {/* Contact info */}
             <div className="flex flex-col gap-8">
               {[
-                { icon: ASSETS.emailIcon, label: "이메일",  value: "hello@reactarchitect.dev" },
-                { icon: ASSETS.locIcon,   label: "활동 지역",      value: "텍사스 오스틴 · 원격" },
+                { icon: ASSETS.emailIcon, label: "이메일",  value: "oneminute22@naver.com" },
+                { icon: ASSETS.locIcon,   label: "활동 지역",      value: "서울 강서구 · 원격 가능" },
               ].map(({ icon, label, value }) => (
                 <div key={label} className="flex items-center gap-6">
                   <div className="w-12 h-12 bg-panel rounded-xl flex items-center justify-center shrink-0">
@@ -97,16 +97,16 @@ export default function ContactPage() {
                 <div className="flex items-center gap-4 mb-4">
                   <img
                     src={ASSETS.avatarImg}
-                    alt="Alex River"
+                    alt="JungHoon Park"
                     className="w-12 h-12 rounded-xl object-cover grayscale"
                   />
                   <div>
-                    <div className="font-grotesk font-bold text-text text-sm">Alex River</div>
-                    <div className="font-inter text-cyan text-[10px] tracking-[1px] uppercase">리드 아키텍트</div>
+                    <div className="font-grotesk font-bold text-text text-sm">박정훈</div>
+                    <div className="font-inter text-cyan text-[10px] tracking-[1px] uppercase">프론트엔드 엔지니어</div>
                   </div>
                 </div>
                 <p className="font-inter text-text-muted text-xs leading-relaxed m-0">
-                  "우리가 기술적으로 뛰어난 것을 구축할 수 있도록 모든 문의를 제가 직접 검토합니다."
+                  "팀 협업과 코드 품질을 중시하며, 새로운 환경에서도 빠르게 적응하고 기여할 수 있습니다."
                 </p>
               </div>
             </div>

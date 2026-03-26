@@ -16,7 +16,7 @@ export default function NavBar({ page, setPage }) {
           onClick={() => setPage("Home")}
           className="gradient-text font-grotesk font-bold text-xl tracking-tight bg-transparent border-none cursor-pointer p-0"
         >
-          Dev.Terminal
+          JungHoon.Dev
         </button>
 
         {/* Links */}

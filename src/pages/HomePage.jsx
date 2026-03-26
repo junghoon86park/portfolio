@@ -13,12 +13,12 @@ const CODE_LINES = [
   [["09","#475569"]],
 ]
 
-const TECH_STACK = ["React", "TypeScript", "Next.js", "Redux"]
+const TECH_STACK = ["JavaScript", "jQuery", "React", "Styled-Components", "CSS3", "HTML5", "Git"]
 
 const STATS = [
-  { val: "08+",   label: "년의 경력" },
-  { val: "40+",   label: "성공적인 배포" },
-  { val: "99.9%", label: "핵심 웹 바이탈 점수" },
+  { val: "09+",   label: "년의 경력" },
+  { val: "LG",   label: "WebOS 앱 런칭" },
+  { val: "3+", label: "주요 플랫폼 경험" },
 ]
 
 export default function HomePage({ setPage }) {
@@ -34,7 +34,7 @@ export default function HomePage({ setPage }) {
             <div className="flex items-center gap-3">
               <div className="bg-cyan-light h-px w-8 shrink-0" />
               <span className="font-inter font-semibold text-cyan-light text-[11px] tracking-[2.2px] uppercase">
-                고성능 프로젝트 작업 가능
+                스마트 TV & 웹 플랫폼 개발
               </span>
             </div>
 
@@ -47,8 +47,8 @@ export default function HomePage({ setPage }) {
 
             {/* Sub-heading */}
             <p className="font-inter text-text-muted text-xl leading-relaxed m-0 max-w-[560px]">
-              저는 고성능 애플리케이션에 집중하는 시니어 React 개발자입니다.
-              복잡한 프론트엔드 생태계와 디자인 시스템 아키텍처를 전문으로 합니다.
+              JavaScript 생태계를 중심으로 8년 7개월간 웹 및 스마트 TV 플랫폼 개발을 이어온 프론트엔드 엔지니어입니다.
+              React/Redux 기반의 복잡한 UI 상태 관리와 성능 최적화에 강점을 가지고 있으며, LG WebOS 환경에서의 TV 앱 런칭 경험을 자랑합니다.
             </p>
 
             {/* CTAs */}
