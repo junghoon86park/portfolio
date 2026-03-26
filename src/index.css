@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0b1326;
+    color: #dae2fd;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Navigation */
+  .nav-glass {
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(6, 14, 32, 0.4);
+  }
+
+  /* Glass card */
+  .glass {
+    background: rgba(45, 52, 73, 0.6);
+    backdrop-filter: blur(8px);
+    border-left: 1px solid rgba(61, 73, 77, 0.3);
+    border-top:  1px solid rgba(61, 73, 77, 0.3);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #bae6fd, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #bfefff, #61dafb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Primary CTA button */
+  .btn-primary {
+    background: linear-gradient(135deg, #bfefff, #61dafb);
+    color: #003641;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  /* Tech tag */
+  .tag {
+    border-bottom: 1px solid #61dafb;
+    color: #bfefff;
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 2px;
+  }
+
+  /* Skill progress bar */
+  .progress-track {
+    background: #2d3449;
+    height: 4px;
+    border-radius: 2px;
+    width: 100%;
+  }
+  .progress-fill {
+    background: #61dafb;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  /* Timeline dots */
+  .dot-active {
+    background: #61dafb;
+    border: 4px solid #0b1326;
+    box-shadow: 0 0 15px rgba(97, 218, 251, 0.5);
+  }
+  .dot-inactive {
+    background: #2d3449;
+    border: 4px solid #0b1326;
+  }
+
+  /* Form inputs */
+  .input-field {
+    background: #2d3449;
+    border: none;
+    border-radius: 4px;
+    padding: 16px;
+    color: #dae2fd;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    transition: box-shadow 0.2s;
+  }
+  .input-field::placeholder {
+    color: #475569;
+  }
+  .input-field:focus {
+    box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.3);
+  }
+
+  /* Tool chip */
+  .chip {
+    background: #2d3449;
+    border-radius: 12px;
+    padding: 8px 16px;
+    color: #ddb7ff;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+  }
+
+  /* Page transition */
+  .page-enter {
+    animation: fadeUp 0.35s ease both;
+  }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
